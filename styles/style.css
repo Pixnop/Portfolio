@@ -7,7 +7,6 @@
 }
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 nav {
     display: flex;
@@ -18,8 +17,8 @@ nav {
 }
 header h1 {
     margin-left: 5%;
-    font-size: 1.5em;
     position: fixed;
+    z-index: 10;
 }
 ul {
     position: relative;
@@ -209,7 +208,7 @@ body .container .card .box .content a:hover {
 }
 .grid {
     width: 100%;
-    max-width: 60rem;
+    max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -221,7 +220,7 @@ body .container .card .box .content a:hover {
 }
 
 .grid-block {
-    width: 50%;
+    width: 30%;
     padding: 1%;
 }
 
@@ -332,3 +331,4 @@ body .container .card .box .content a:hover {
     15px 15px rgba(4, 140, 231, 0.2), 20px 20px rgba(4, 140, 231, 0.1),
     25px 25px rgba(4, 140, 231, 0.05);
 }
+
