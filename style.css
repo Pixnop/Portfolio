@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+header h1 {
+    margin-left: 5%;
+    position: fixed;
+}
+ul {
+    position: relative;
+}
+ul li {
+    list-style: none;
+    text-align: center;
+}
+ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 3em;
+    padding: 5px 20px;
+    display: inline-flex;
+    font-weight: 700;
+    transition: 0.5s;
+}
+ul:hover li a {
+    color: #0002;
+}
+ul li:hover a {
+    color: #000;
+    background: rgba(255, 255, 255, 1);
+}
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 500px;
+    transition: letter-spacing 0.5s, left 0.5s;
+}
+ul li a:hover:before {
+    content: attr(data-text);
+    opacity: 1;
+    left: 50%;
+    letter-spacing: 10px;
+    width: 1800px;
+    height: 1800px;
+}
+ul li:nth-child(6n + 1) a:before {
+    background: #81ecec;
+}
+ul li:nth-child(6n + 2) a:before {
+    background: #ff7675;
+}
+ul li:nth-child(6n + 3) a:before {
+    background: #55efc4;
+}
+ul li:nth-child(6n + 4) a:before {
+    background: #a29bfe;
+}
+ul li:nth-child(6n + 5) a:before {
+    background: #fd79a8;
+}
+ul li:nth-child(6n + 6) a:before {
+    background: #ffeaa7;
+}
+body .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px 0;
+}
+
+body .container .card {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+    transition: 0.5s;
+}
+
+body .container .card:nth-child(1) .box .content a {
+    background: #2196f3;
+}
+
+body .container .card:nth-child(2) .box .content a {
+    background: #e91e63;
+}
+
+body .container .card:nth-child(3) .box .content a {
+    background: #23c186;
+}
+
+body .container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+body .container .card .box:hover {
+    transform: translateY(-50px);
+}
+
+body .container .card .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+body .container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+body .container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+body .container .card .box .content h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+body .container .card .box .content p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+body .container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+body .container .card .box .content a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+}
+
+#apropos {
+    color: #fff;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}

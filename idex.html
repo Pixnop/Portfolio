@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Item Hover Effects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Léon Fievet</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-text="Home">Home</a></li>
+                <li><a href="#apropos" data-text="About">Apropos</a></li>
+                <li><a href="#" data-text="Services">Services</a></li>
+                <li><a href="#projets" data-text="Work">Projet</a></li>
+                <li><a href="#" data-text="Team">Team</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="apropos">
+            <div class="container">
+                <div class="card">
+                    <div class="box">
+                        <div class="content">
+                            <h2>01</h2>
+                            <h3>Card One</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <div class="content">
+                            <h2>02</h2>
+                            <h3>Card Two</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <div class="content">
+                            <h2>03</h2>
+                            <h3>Card Three</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projets">
+            <h2>Mes projets</h2>
+            <p>Voici une sélection de mes projets récents, avec des captures d'écran et des descriptions.</p>
+        </section>
+        <section id="contact">
+            <h2>Me contacter</h2>
+            <p>Utilisez le formulaire ci-dessous pour me contacter.</p>
+            <form action="envoyer-email.php" method="post">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </main>
+<footer>
+    <p>Droit d'auteur © 2023 Mon Portfolio.</p>
+</footer>
+</body>
+</html>
